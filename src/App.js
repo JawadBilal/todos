@@ -14,7 +14,6 @@ function App() {
   });
   const [newTask, setNewTask] = useState();
   const [isEmpty,setIsEmpty] = useState(false); 
-   
   const [editMode,setEditMode] = useState(false);
   const [updateTask, setUpdateTask] = useState(null);
   useEffect(()=>{
@@ -87,7 +86,7 @@ function App() {
           {
           isEmpty ? 
           <div className='emptyList'>
-            <img src={Empty}/>
+            <img src={Empty} alt='empty'/>
             <h3>Empty...</h3>
           </div>
           :
