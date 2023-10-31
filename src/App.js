@@ -22,7 +22,7 @@ function App() {
   },[list]);
   useEffect(()=>{ 
     list.length===0 ? setIsEmpty(true) : setIsEmpty(false);
-  },[]);
+  },[list.length]);
   const inputChange = (event) => {
     setNewTask(event.target.value);
   };
